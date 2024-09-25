@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San D Lucca Imobiliária</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="./assets/sandluccca.png" alt="main-logo" />
+        <h1>San D Lucca</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#imoveis">Imóveis</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Seção de Imóveis -->
+    <section id="imoveis" class="imoveis">
+      <h2>Nossos Imóveis</h2>
+      <div class="grid-imoveis">
+        <div class="imovel">
+          <img src="./assets/casa 1/main.jpg" alt="Casa moderna" />
+          <h3>Casa Moderna</h3>
+          <p>3 quartos, 2 banheiros, piscina. R$ 850.000</p>
+          <button class="btn"><a href="Casa moderna.html">Ver Mais</a></button>
+        </div>
+        <div class="imovel">
+          <img src="./assets/casa 2/main.jpg" alt="Casa moderna 2" />
+          <h3>Apartamento no Centro</h3>
+          <p>2 quartos, 1 banheiro. R$ 550.000</p>
+          <button class="btn"><a href="Casa moderna 2.html">Ver Mais</a></button>
+        </div>
+        <div class="imovel">
+          <img src="./assets/casa 3/main[.jpg" alt="Casa com jardim" />
+          <h3>Casa com Jardim</h3>
+          <p>4 quartos, 3 banheiros, jardim amplo. R$ 1.200.000</p>
+          <button class="btn"><a href="Casa com Jardin.html">Ver Mais</a></button>
+        </div>
+        <!-- Adicione mais imóveis aqui -->
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Compra de Imóveis</h3>
+          <p>Imóveis residenciais e comerciais à venda.</p>
+        </div>
+        <div class="card">
+          <h3>Aluguel de Imóveis</h3>
+          <p>Imóveis de curta e longa duração.</p>
+        </div>
+        <div class="card"> 
+          <h3>Avaliação de Propriedades</h3>
+          <p>Oferecemos avaliação detalhada de seu imóvel.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section id="sobre" class="sobre-nos">
+      <h2>Sobre Nós</h2>
+      <p>Seu parceiro confiavel para Imóveis.</p>
+      <table>
+        <tr>
+          <th>Informação</th>
+          <th>Detalhes</th>
+        </tr>
+        <tr>
+          <td>Nome Empresarial</td>
+          <td>EMPREENDIMENTO IMOBILIARIA SAN D LUCCA LTDA</td>
+        </tr>
+        <tr>
+          <td>CNPJ</td>
+          <td>42.534.596/0001-50</td>
+        </tr>
+        <tr>
+          <td>Atividade Econômica Principal (CNAE)</td>
+          <td>68.21-8-02 - Corretagem no aluguel de imóveis</td>
+        </tr>
+        <tr>
+          <td>Atividades Econômicas Secundárias (CNAE)</td>
+          <td>41.10-7-00 - Incorporação de empreendimentos imobiliários</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>68.10-2-02 - Aluguel de imóveis próprios</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>68.21-8-01 - Corretagem na compra e venda de imóveis</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>68.22-6-00 - Gestão e administração de propriedade</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>74.90-1-04 - Atividades de intermediação de agenciamento</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>81.11-7-00 - Serviços combinados para apoio a edifícios</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>81.12-5-00 - Condomínios prediais</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>82.91-1-00 - Atividades de cobranças e informações</td>
+        </tr>
+        <tr>
+          <td>Contato</td>
+          <td><a href="https://wa.me/5511945115070">(11) 94511-5070 </a></td>
+        </tr>
+      </table>
+    </section>
+
+    <div class="contato-form">
+      <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form id="contatoForm">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            placeholder="Nome Completo"
+            id="nome"
+            name="nome"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            placeholder="Digita seu melhor email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            placeholder="Me fala como posso ajudar"
+            name="mensagem"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </section>
+    </div>
+    <div class="whatsapp-icon" id="whatsappIcon">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+  </div>
+    <footer>
+      <p>&copy; &reg; 2024 JLDev . Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
