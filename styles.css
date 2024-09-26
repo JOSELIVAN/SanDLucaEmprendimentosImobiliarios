@@ -44,18 +44,17 @@ header h1 {
   display: flex;
   font-size: 48px;
   width: 100vw;
-  height: 50vh;
+  height: 10vh;
   animation: bounce 2s infinite;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: baseline;
+  margin-top: 280px;
   justify-content: flex-start;
   align-items: center;
 }
 nav {
   display: block;
   position: relative;
-  margin-left: 40%;
+  margin-left: 27%;
   font-size: 20px;
   align-content: center;
 }
@@ -100,48 +99,52 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 26px;
-  
 }
 .service-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-content: center;
   justify-content: space-between;
   align-items: center;
+  margin-top: -250px;
+  position: relative;
 }
 #servicos {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  position: relative;
+  align-content: space-around;
+  flex-direction: column;
 }
 .card {
-  border-radius: 20px;
   padding: 20px;
-  margin-top: 10%;
+  margin-top: 23%;
 }
-.contato-form {
+.card img {
   display: flex;
-  margin: 0% auto;
-  margin-bottom: 2%;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  border: 1px solid red;
+  width: 250px;
+  border: 1px black solid;
   border-radius: 10px;
-  width: 300px;
-  text-align: center;
-}
-#contatoForm {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.contato-form {
+  display: flex;
+  margin: 1% 43%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 247px;
+  height: 330px;
+  text-align: center;
 }
 .table-container {
   width: 80%;
@@ -150,12 +153,6 @@ h2 {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-}
-
-h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: -225px;
 }
 
 table {
@@ -231,6 +228,16 @@ button {
   background: none;
   transition: all 0.3s ease-in-out;
 }
+#devcontact a{
+  text-decoration: none;
+  color: white;
+}
+#arrastrar{
+  width: 28px;
+    background-color: white;
+    border: 1px red solid;
+    border-radius: 23px;
+}
 
 @media (max-width: 600px) {
   .whatsapp-icon {
@@ -241,18 +248,6 @@ button {
   .whatsapp-icon img {
     width: 35px;
     height: 35px;
-  }
-}
-
-@media (max-width: 600px) {
-  .table-container {
-    width: 100%;
-  }
-
-  th,
-  td {
-    font-size: 14px;
-    padding: 8px;
   }
 }
 
@@ -321,7 +316,7 @@ button {
 /* Seção de Imóveis */
 .imoveis {
   background-color: #f0f0f0;
-  padding: 60px 20px;
+  padding: 40px 5px;
   text-align: center;
 }
 
@@ -424,7 +419,7 @@ button {
 
 /* Seções gerais */
 section {
-  padding: 60px 20px;
+  padding: 0px 20px;
 }
 
 /* Footer */
@@ -433,4 +428,85 @@ footer {
   padding: 20px;
   background-color: #003366;
   color: #fff;
+}
+
+@media screen and (max-width: 870px) {
+  .logo {
+    display: flex;
+    width: 100%;
+    height: -webkit-fill-available;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 222px;
+  }
+  header {
+    height: 50vh;
+    width: 210%;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    margin-left: 70%;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 542px;
+    height: 60px;
+  }
+  .imoveis {
+    display: flex;
+    flex-direction: column;
+    width: 206%;
+    height: 50vh;
+  }
+  #servicos {
+    display: flex;
+    width: 206%;
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100vw;
+    margin: auto 100px;
+  }
+  #servicos h2 {
+    display: flex;
+  }
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 208%;
+    height: fit-content;
+    align-items: center;
+  }
+  .contato-form {
+    display: flex;
+  }
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 170px;
+    right: 50px;
+  }
+  footer {
+    display: block;
+    width: 207vw;
+    height: auto;
+    text-align: center;
+  }
 }
